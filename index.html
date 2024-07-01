@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инновационные идеи для бизнеса</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes moveAround {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(-10px, 10px); }
+            50% { transform: translate(10px, 10px); }
+            75% { transform: translate(10px, -10px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #4a3728;
+            background: linear-gradient(135deg, #f5e8dc 0%, #d2a679 100%);
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1s ease-out;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(to right, #8b5a2b, #d2a679);
+            color: #ffffff;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            animation: slideIn 0.5s ease-out;
+        }
+        .main-content {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+        .goal {
+            background: #f9f1e7;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            animation: slideIn 0.5s ease-out;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .goal:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .goal h3 {
+            color: #8b5a2b;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        .conclusion {
+            margin-top: 2rem;
+            font-style: italic;
+            background: #f0e6d9;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .icon {
+            font-size: 2rem;
+            margin-right: 1rem;
+            vertical-align: middle;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .goal {
+                margin: 1rem 0;
+            }
+            .goal h3 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-lightbulb icon"></i>Инновационные идеи для развития бизнеса</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h2><i class="fas fa-rocket icon"></i>Вступление</h2>
+            <p>Сегодня я хочу представить серию инициатив, направленных на значительное улучшение нашего бизнеса. Основная цель этих инициатив – повышение эффективности работы компании, улучшение качества обслуживания клиентов и укрепление нашей конкурентоспособности на рынке.</p>
+
+            <h2><i class="fas fa-bullseye icon"></i>Цели</h2>
+            <a href="b2c_solutions.html" class="goal">
+                <h3><i class="fas fa-store icon"></i>Решения для розницы (B2C)</h3>
+            </a>
+            
+            <a href="tiktok_ukraine.html" class="goal">
+                <h3><i class="fas fa-tiktok icon"></i>Преимущества использования TikTok для продвижения бизнеса на рынке Украины</h3>
+            </a>
+          
+            <a href="b2b_solutions.html" class="goal">
+                <h3><i class="fas fa-store icon"></i>Решения для розницы (B2B)</h3>
+            </a>
+            
+            <a href="ai_assistant.html" class="goal">
+                <h3><i class="fas fa-robot icon"></i>Создание AI-помощника для обработки заказов и консультаций</h3>
+            </a>
+
+            <div class="conclusion">
+                <h2><i class="fas fa-flag-checkered icon"></i>Заключение</h2>
+                <p>Реализация этих инициатив позволит нашей компании значительно повысить свою производительность, улучшить взаимодействие с клиентами и укрепить позиции на рынке. Эти шаги помогут нам адаптироваться к новым вызовам и использовать передовые решения для достижения лучших результатов.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
